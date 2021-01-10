@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <link rel=stylesheet type="text/css" href="./home.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="header">
+    <div class="box" id="logo">
+    </div>
+    <div class="tool-box">
+      <img src="./logo/user.png" class="toollogo" alt="user">
+      <img src="./logo/like.png" class="toollogo" alt="liked">
+      <img src="./logo/change.png" class="toollogo" alt="change">
+    </div>
+  </div>
+
+  <!--幻燈片在這-->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="floatman">
+      <!--帥哥在這，圖及對話-->
+      <img class="man" src="./man/test2.png">
+      <h6 class="talk">抓住你了，跟我一起來看這篇嘛</h6>
+    </div>
+    <!--新聞照片及標題-->
+    <div class="carousel-inner">
+      <div class="carousel-item active popo-carousel-item" data-bs-interval="3000">
+        <img src="./photo/1.png" class="d-block w-100" alt="馳騁機車賽場　廖翊宏UCRR奪冠">
+        <div class="carousel-caption d-none d-md-block popo-carousel-caption">
+          <h5>馳騁機車賽場　廖翊宏UCRR奪冠</h5>
+        </div>
+      </div>
+      <div class="carousel-item popo-carousel-item" data-bs-interval="3000">
+        <img src="./photo/2.jpg" class="d-block w-100" alt="一路苦戰　廖振珽桌球遺憾摘銀">
+        <div class="carousel-caption d-none d-md-block popo-carousel-caption">
+          <h5>一路苦戰　廖振珽桌球遺憾摘銀</h5>
+        </div>
+      </div>
+      <div class="carousel-item popo-carousel-item" data-bs-interval="3000">
+        <img src="./photo/3.jpg" class="d-block w-100" alt="半秒之差　楊合貞滑輪溜冰驚險奪冠">
+        <div class="carousel-caption d-none d-md-block popo-carousel-caption">
+          <h5>半秒之差　楊合貞滑輪溜冰驚險奪冠</h5>
+        </div>
+      </div>
+      <div class="carousel-item popo-carousel-item" data-bs-interval="3000">
+        <img src="./photo/4.jpg" class="d-block w-100" alt="再「接」再「力」　國體馬拉松賽重回冠軍寶座">
+        <div class="carousel-caption d-none d-md-block popo-carousel-caption">
+          <h5>再「接」再「力」　國體馬拉松賽重回冠軍寶座</h5>
+        </div>
+      </div>
+    </div>
+    <ol class="carousel-indicators popo-carousel-indicators">
+      <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+      <li data-bs-target="#carouselExampleDark" data-bs-slide-to="3"></li>
+    </ol>
+    <!--
+    <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+    -->
+  </div>
+
+
+  <!--可愛人仔在這-->
+  <div id="cute">
+    <img id="cuteimg" src="./man/test3.png">
+    <div id="cutep">有我在你身邊一起閱讀哦</div>
+  </div>
+
+  <!--首頁推薦新聞在這-->
+  <div class="news-recommend">
+    <div class="title">
+      <div><img class="decor" src="./drawing/草莓配件/果醬餅乾.png"></div>
+      <div><p>今日的甜點資訊</p></div>
+    </div>
+    <div id="allnewsbox">
+      <div class="newsbox">
+        <div class="overlay">
+          <div class="text">馳騁機車賽場<br>廖翊宏UCRR奪冠</div>
+        </div>
+      </div>
+      <div class="newsbox">
+        <div class="overlay">
+          <div class="text">一路苦戰<br>廖振珽桌球遺憾摘銀</div>
+        </div>
+      </div>
+
+      <div class="newsbox">
+        <div class="overlay">
+          <div class="text">半秒之差<br>楊合貞滑輪溜冰驚險奪冠</div>
+        </div>
+      </div>
+
+      <div class="newsbox">
+        <div class="overlay">
+          <div class="text">再「接」再「力」<br>國體馬拉松賽重回冠軍寶座</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--介紹在這-->
+  <div id="intro">瑞盈的介紹</div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+</html>

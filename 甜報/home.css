@@ -1,0 +1,260 @@
+body{
+    background-color: #FFF6F4;
+}
+
+*{font-family: 'Noto Sans TC', sans-serif;}
+
+#header{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+#logo{
+    margin: auto 0 auto 5%;
+    height: 100px;
+    width: 100px;
+    background-image: url(./drawing/獨角獸/草莓獨角.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+
+.tool-box{
+    margin:auto 5% auto 0;
+}
+
+.toollogo{
+    height: 20px;
+    margin: 0 10px;
+}
+
+/* 下面是有關帥哥的 */
+
+.floatman{
+    position: absolute;
+    height: 120%;
+    width: 100%;
+    margin: auto;
+}
+
+.man{
+    position: absolute;
+    z-index: 10;
+    left: -73.24px;
+    height: 100%;
+    margin:0 auto;
+
+}
+
+.talk{
+    position: absolute;
+    left: 73.24px;
+    top:-31.5px;
+    z-index: 11;
+    color: white;
+    padding: 2.5%;
+    background-color: #A7123F;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+/* 下面是有關幻燈片的 */
+
+#carouselExampleDark{
+    width: 700px;
+    height: 300px;
+    margin: 0 auto 130px auto;
+}
+
+
+/*圖*/
+
+.popo-carousel-item{
+    height: 332.5px;
+}
+
+.popo-carousel-item img{
+    width: 700;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+/* overwrite Bootstrap default .carousel-caption */
+
+.popo-carousel-caption {
+    width: 100%;
+    text-align: right;
+    left: 0;
+    bottom: 0; 
+}
+
+.popo-carousel-caption h5{ 
+    display: inline;
+    background-color: white;
+    border: 3px solid white;
+    padding: 5px 20px;
+    color:#A7123F;
+    margin: 0 30px 0 auto;
+}
+
+/*點點*/
+
+.popo-carousel-indicators{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    /*width: 120px;*/
+    width: 100%;
+    top:-35px;
+    margin: 0;
+}
+
+.popo-carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin:0 10px;
+}
+.carousel-dark .carousel-indicators li{
+    background-color: #A7123F;
+}
+
+/* 下面是有關可愛人仔的 */
+#cute {
+    text-align: right;
+    position: sticky;
+    top: 50px;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+#cuteimg {
+    display: inline-block;
+    height: 200px;
+    object-fit: cover;
+}
+
+#cutep{
+    background-image: url(./drawing/草莓配件/點點圈.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:  #A7123F;;
+    padding: 50px 0;
+    opacity: 0;
+}
+
+#cuteimg:hover~#cutep{
+    opacity: 1;
+    transition-duration:0.3s;
+  }
+
+
+/* 下面是有關推薦新聞的 */
+
+.news-recommend{
+    margin-top: -200px;
+    margin-left: 5%;
+}
+
+#allnewsbox{
+    display: inline-block;
+}
+
+.decor{
+    display: inline-block;
+    width: 50px;
+}
+
+.title{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align:top;
+    margin-right: 50px;
+}
+
+.title p{
+    writing-mode:vertical-rl;
+    margin: 20px 0 0 0;
+    font-size: 24px;
+    color: #A7123F;
+}
+
+/* 下面是有關推薦新聞的動畫 */
+
+.newsbox {
+    position: relative;
+    padding: 0;
+    width: 400px;
+    height: 280px;
+    margin-top:100px;
+    background-size: cover;
+  }
+
+  .newsbox:nth-child(1){
+    display: inline-block;
+    background-image: url(./photo/1.jpg);
+    width: 300px;
+    height: 210px;
+    margin-top: 0px;
+  }
+
+  .newsbox:nth-child(2){
+    background-image: url(./photo/2.jpg);
+    width: 400px;
+    height: 280px;
+    margin-left: 65%;
+  }
+
+  .newsbox:nth-child(3){
+    background-image: url(./photo/3.jpg);
+    width: 340px;
+    height: 238px;
+    margin-left: 15%;
+  }
+
+  .newsbox:nth-child(4){
+    background-image: url(./photo/4.jpg);
+    width: 360px;
+    height: 252px;
+    margin-left: 80%;
+  }
+
+  
+  .overlay {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ECD4D4;
+  }
+  
+  .newsbox:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+/* 下面是有關作者介紹的 */
+
+#intro{
+    background-color: #DDD9D9;
+    height: 260px;
+    margin-top: 200px;
+}
